@@ -15,13 +15,42 @@ public class Ejercicio04 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         double[] promedios = {10, 10, 9.1, 7, 6.1, 4, 8};
-        String[] estudiantes = {"Kimberly Gonzalez", "Mark Hogan", 
+        String[] estudiantes = {"Kimberly Gonzalez", "Mark Hogan",
             "Teresa Martinez", "Julia Johnson", "Mark Cook", "Jennifer Manning",
             "Juan Vasquez"};
-        String[] promediosCualitativos = new String[7];
-        
-    }
+        String[] promediosCualitativos = new String[8];
 
+        for (int i = 0; i < promedios.length; i++) {
+
+            if ((promedios[i] >= 0) && (promedios[i] <= 5.9)) {
+                promediosCualitativos[i] = "regular";
+                //System.out.println("Regular");
+
+            } else {
+                if ((promedios[i] >= 6) && (promedios[i] <= 8.9)) {
+                    promediosCualitativos[i] = "Bueno";
+                    //System.out.println("Bueno");
+
+                } else {
+                    if ((promedios[i] >= 9) && (promedios[i] <= 10)) {
+                        promediosCualitativos[i] = "Sobresaliente";
+                        //System.out.println("Sobresaliente");
+
+                    }
+
+                }
+
+            }
+
+        }
+        for (int i = 0; i < estudiantes.length; i++) {
+            System.out.printf("%s,promedio: %s,promedio cualitativo:%s \n",
+                    estudiantes[i], promedios[i], promediosCualitativos[i]);
+        }
+        // agregamos un for para recorrer los elementos y compararlos con los 
+        // promedios cualitativos, una vez comparados les asignamos una respuesta
+        // dependiendo del valor de promedios y por ultimo presentamos 
+    }
 }
