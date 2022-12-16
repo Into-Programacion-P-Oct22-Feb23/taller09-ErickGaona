@@ -1,4 +1,9 @@
+Erick Gaona
+Alex Sanchez
+
 # Taller 9 (Laboratorio)
+
+
 ## Construcción de programas usando arreglos unidimensionales
 
 Revisar los ejercicios propuestos en el proyecto de Netbeans denominado: **EjerciciosT9**
